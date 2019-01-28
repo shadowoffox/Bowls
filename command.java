@@ -27,8 +27,8 @@ public class command {
 		dog1.ToJump();
 
 		Cat[] cats = new Cat[]{
-		new Cat(100,2,3, true, 10),
-		new Cat(100,2,3, true, 14)
+		new Cat(100,2,3, 10),
+		new Cat(100,2,3, 14)
 		};
 
 	}
