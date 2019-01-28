@@ -4,12 +4,14 @@ public class command {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Cat cat = new Cat(100, 2, 3, true,10);
+	/*	Cat cat = new Cat(100, 2, 3 ,10);
 		cat.ToRun();
 		cat.ToSwim();
 		cat.ToJump();
+		new Bowls(100);
+		cat.ToEat();
 		
-		Cat cat1 = new Cat(100,2,3, true, 10);
+		Cat cat1 = new Cat(100,2,3, 10);
 		Cat_Restriction();
 		cat1.ToRun();
 		cat1.ToSwim();
@@ -25,12 +27,16 @@ public class command {
 		dog1.ToRun();
 		dog1.ToSwim();
 		dog1.ToJump();
-
+*/
 		Cat[] cats = new Cat[]{
-		new Cat(100,2,3, 10),
+		new Cat(100,2,3, 19),
 		new Cat(100,2,3, 14)
 		};
+		Bowls bowl = new Bowls(20);
+		for (Cat cat2: cats){
 
+			cat2.ToEat(bowl);
+		}
 	}
 
 	public static void Cat_Restriction () {

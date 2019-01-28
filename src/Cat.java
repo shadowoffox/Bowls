@@ -13,6 +13,7 @@ public boolean satiety=false;
 	 this._jump(Jump);
 	
 	 this._hunger(Hungry);
+
  }
 
  
@@ -27,10 +28,16 @@ public boolean satiety=false;
  public void ToJump() {
 	 System.out.println((this.jump<=J) ? "УСПЕХ!*Куклачев в вашей голове дьявольски хохочет*" : "ПРОВАЛ! Ваша киска не выдержала издевательских приказов и упрыгала от вас!");
  }
- public void ToEat(){
-if (bowls.sb-this.hungry==0) "кошечка наелась";
-	 else if(blows.sb-this.hungry>0) "Ваша кошечка лопнула от переедания";
-	 else "кошечка осталась голодной"
+ public void ToEat(Bowls isFull){
+
+if (a-this.hunger==0) {System.out.println("кошечка всё слопала и наелась"); satiety=true; }
+
+	 else if(isFull-this.hunger>0) {System.out.println("В миске больше, чем кошечка может съесть, но сколько смогла, съела"); satiety=true;
+	 isFull-=1;}
+
+	 else System.out.println("В миске меньше чем нужно кошечке");
+
+
  }
 
 }

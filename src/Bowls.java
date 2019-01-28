@@ -1,8 +1,8 @@
 public class Bowls {
 
-    public int sb;
+    public static int sb;
 
-    Bowls(int Bowl){
+   public Bowls(int Bowl){
     sb=Bowl;
     }
 
