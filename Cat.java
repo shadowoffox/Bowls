@@ -4,13 +4,14 @@ public class Cat extends Animals {
  public static int R=200;
  public static int S=0;
  public static double J=2;
+	
 
 
-   public Cat (int Run, int Swim, int Jump, boolean Satiety, int Hungry) {
+   public Cat (int Run, int Swim, int Jump, int Hungry) {
 	 this._run(Run);
 	 this._swim(Swim);
 	 this._jump(Jump);
-	 this._Satiety(Satiety);
+	
 	 this._hunger(Hungry);
  }
 
