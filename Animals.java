@@ -5,7 +5,6 @@ protected int run;
 protected int swim;
 protected double jump;
 public int hunger;//аппетит
-public boolean satiety=false; //сытый?
 
 
 	 public  void _run(int Rlength) {
@@ -22,6 +21,6 @@ public boolean satiety=false; //сытый?
 
 	 public void _hunger(int Hunger){hunger=Hunger;}
 
-	 public void _Satiety(boolean Satiety){satiety=Satiety;}
+	
 	
 }
