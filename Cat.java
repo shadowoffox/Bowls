@@ -5,7 +5,7 @@ public class Cat extends Animals {
  public static int S=0;
  public static double J=2;
 	
-
+public boolean satiety=false;
 
    public Cat (int Run, int Swim, int Jump, int Hungry) {
 	 this._run(Run);
@@ -28,7 +28,9 @@ public class Cat extends Animals {
 	 System.out.println((this.jump<=J) ? "УСПЕХ!*Куклачев в вашей голове дьявольски хохочет*" : "ПРОВАЛ! Ваша киска не выдержала издевательских приказов и упрыгала от вас!");
  }
  public void ToEat(){
-
+if (bowls.sb-this.hungry==0) "кошечка наелась";
+	 else if(blows.sb-this.hungry>0) "Ваша кошечка лопнула от переедания";
+	 else "кошечка осталась голодной"
  }
 
 }
